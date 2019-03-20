@@ -1,0 +1,30 @@
+POST http://localhost:8080/jobs
+Content-Type: application/xml
+
+<jobs>
+    <job id="16">
+        <type>print</type>
+        <user>user1</user>
+        <device>device1</device>
+        <amount>12</amount>
+    </job>
+    <job id="17">
+        <type>scan</type>
+        <user>user1</user>
+        <device>device1</device>
+        <amount>3</amount>
+    </job>
+    <job id="18">
+        <type>fax</type>
+        <user>user1</user>
+        <device>device1</device>
+        <amount>10</amount>
+    </job>
+</jobs>
+
+###
+
+
+GET http://localhost:8080/statistics?type=scan&user=user1
+
+###

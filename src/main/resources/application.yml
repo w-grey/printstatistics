@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+      use-new-id-generator-mappings: false
+    properties.hibernate.jdbc.lob.non_contextual_creation: true
+    show-sql: true
+
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: always
