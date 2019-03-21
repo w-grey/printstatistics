@@ -51,10 +51,20 @@ public class Job {
 
     @NotNull
     @XmlTransient
-    @JsonFormat(pattern = "dd.MM.yyyy hh:mm")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd.MM.yyyy HH:mm")
     private LocalDateTime time;
 
+    public Job(long jobId, @NotBlank String device, @NotBlank String user, @NotNull JobType type, @Min(1) int amount, @NotNull LocalDateTime time) {
+        this.jobId = jobId;
+        this.device = device;
+        this.user = user;
+        this.type = type;
+        this.amount = amount;
+        this.time = time;
+    }
 
+    public Job() {
+    }
 
     public Long getId() {
         return id;

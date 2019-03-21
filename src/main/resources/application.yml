@@ -10,3 +10,6 @@ spring:
     platform: postgres
     driver-class-name: org.postgresql.Driver
     initialization-mode: always
+    url: jdbc:postgresql://localhost:5432/print_statistics
+    username: db_user
+    password: db_password

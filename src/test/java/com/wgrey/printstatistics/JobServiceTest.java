@@ -13,6 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.Map;
 
 import static org.junit.Assert.*;
+import static com.wgrey.printstatistics.TestUtil.XML;
 
 @RunWith(SpringRunner.class)
 public class JobServiceTest {
@@ -26,34 +27,8 @@ public class JobServiceTest {
 
     @Test
     public void checkSaveTransactionResponse(){
-        String xml="<jobs>" +
-                "    <job id=\"16\">" +
-                "        <type>print</type>" +
-                "        <user>user1</user>" +
-                "        <device>device1</device>" +
-                "        <amount>12</amount>" +
-                "    </job>" +
-                "    <job id=\"17\">" +
-                "        <type>scan</type>" +
-                "        <user>user1</user>" +
-                "        <device>device1</device>" +
-                "        <amount>3</amount>" +
-                "    </job>" +
-                "    <job id=\"18\">" +
-                "        <type>fax</type>" +
-                "        <user>user2</user>" +
-                "        <device>device1</device>" +
-                "        <amount>10</amount>" +
-                "    </job>" +
-                "    <job id=\"19\">" +
-                "        <type>fax</type>" +
-                "        <user>user2</user>" +
-                "        <device>device1</device>" +
-                "        <amount>12</amount>" +
-                "    </job>" +
-                "</jobs>";
 
-        Map<String,Integer> result=jobService.saveTransaction(xml);
+        Map<String,Integer> result=jobService.saveTransaction(XML);
 
         assertEquals(result.get("user1").intValue(),15);
         assertEquals(result.get("user2").intValue(),22);
