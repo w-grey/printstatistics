@@ -1,6 +1,6 @@
 package com.wgrey.printstatistics.util;
 
-import com.wgrey.printstatistics.error.ApplicationException;
+import com.wgrey.printstatistics.util.error.ApplicationException;
 import com.wgrey.printstatistics.model.JobType;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;

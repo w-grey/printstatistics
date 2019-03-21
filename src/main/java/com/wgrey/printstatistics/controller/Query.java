@@ -1,6 +1,6 @@
 package com.wgrey.printstatistics.controller;
 
-import com.wgrey.printstatistics.error.ApplicationException;
+import com.wgrey.printstatistics.util.error.ApplicationException;
 import com.wgrey.printstatistics.model.JobType;
 
 import java.time.LocalDateTime;

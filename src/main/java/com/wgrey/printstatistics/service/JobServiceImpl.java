@@ -1,10 +1,10 @@
 package com.wgrey.printstatistics.service;
 
 import com.wgrey.printstatistics.controller.Query;
-import com.wgrey.printstatistics.error.ApplicationException;
+import com.wgrey.printstatistics.util.error.ApplicationException;
 import com.wgrey.printstatistics.model.Job;
 import com.wgrey.printstatistics.repository.JobRepository;
-import com.wgrey.printstatistics.specification.JobSpecification;
+import com.wgrey.printstatistics.util.JobSpecification;
 import com.wgrey.printstatistics.to.JobsContainer;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;

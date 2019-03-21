@@ -1,4 +1,4 @@
-package com.wgrey.printstatistics.error;
+package com.wgrey.printstatistics.util.error;
 
 public class ApplicationException extends RuntimeException {
 

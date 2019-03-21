@@ -1,7 +1,7 @@
 package com.wgrey.printstatistics.model;
 
 import com.fasterxml.jackson.annotation.JsonValue;
-import com.wgrey.printstatistics.error.ApplicationException;
+import com.wgrey.printstatistics.util.error.ApplicationException;
 
 import java.util.Arrays;
 

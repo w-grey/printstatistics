@@ -1,4 +1,4 @@
-package com.wgrey.printstatistics.specification;
+package com.wgrey.printstatistics.util;
 
 import com.wgrey.printstatistics.controller.Query;
 import com.wgrey.printstatistics.model.Job;
