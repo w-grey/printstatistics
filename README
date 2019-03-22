@@ -1,0 +1,8 @@
+1. База данных - PostgreSQL.
+2. Скрипт для создания схемы БД запускается автоматически при старте приложения.
+3. Настройи БД по-умолчанию:
+    -url: jdbc:postgresql://localhost:5432/print_statistics
+    -username: db_user
+    -password: db_password
+4. При запросе статистики (GET /statistics) время для параметров timeFrom и timeTo должно передаваться в ISO формате,
+например: 2019-03-21T00:00:00.
