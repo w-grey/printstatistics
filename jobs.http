@@ -2,19 +2,19 @@ POST http://localhost:8080/jobs
 Content-Type: application/xml
 
 <jobs>
-    <job id="122">
+    <job id="1">
         <type>print</type>
         <user>user1</user>
         <device>device1</device>
         <amount>12</amount>
     </job>
-    <job id="123">
+    <job id="2">
         <type>scan</type>
         <user>user1</user>
         <device>device1</device>
         <amount>3</amount>
     </job>
-    <job id="124">
+    <job id="3">
         <type>fax</type>
         <user>user1</user>
         <device>device1</device>
